@@ -1,0 +1,24 @@
+<h2>Create Book</h2>
+
+<form action="/books/create" method="POST">
+
+    {{!-- User that will be connected to the book --}}
+    <label>Username:</label>
+    <input type="text" name="username" />
+
+    <label>Book name:</label>
+    <input type="text" name="name" />
+
+    <label>Book author:</label>
+    <input type="text" name="author" />
+
+    <label>Price:</label>
+    <input type="text" name="price" />
+
+    <button type="submit">Create Book</button>
+
+</form>
+
+{{#if errorMsg}}
+<h3>{{errorMsg}}</h3>
+{{/if}}

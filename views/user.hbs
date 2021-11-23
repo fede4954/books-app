@@ -1,0 +1,11 @@
+<h2>User page {{this.user.username}}</h2>
+
+<ul>
+    {{#if this.books }}
+    {{#each thisbooks}}
+    <li>{{this.name}}</li>
+    {{/each}}
+    {{else}}
+    <p>You don't have any books yet</p>
+    {{/if}}
+</ul>
